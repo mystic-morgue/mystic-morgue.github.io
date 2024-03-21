@@ -1,0 +1,67 @@
+@font-face {
+	font-family: hk-grotesk;
+	src: url('fonts/hk-grotesk/HKGrotesk-Medium.otf');
+}
+
+@font-face {
+	font-family: hk-grotesk-bold;
+	src: url('fonts/hk-grotesk/HKGrotesk-SemiBold.otf');
+}
+
+body {
+	background-image: url("img/background.jpg");
+	/* background-color: #e5e5e5; */
+	font-family: hk-grotesk;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: hk-grotesk-bold;
+}
+
+.title {
+	font-size: 60pt
+}
+
+hr {
+	border-radius: 2px;
+	color: #c31f25;
+	border: 2px solid currentColor;
+}
+
+p {
+	color: black;
+	font-size: large;
+	line-height: 2;
+	word-spacing: 5px;
+}
+
+.test
+{
+	background-color: #FFFFFF60;
+}
+
+
+.btn-primary {
+	background-color: #c31f25;
+	border-color: #673F69;
+}
+
+.btn-primary:hover, .btn-primary:focus  {
+	background-color: #673F69;
+	border-color: #673F69;
+}
+
+.btn-wishlist {
+	background-color: #2a475e;
+	border-color: #1b2838;
+}
+
+/* palette
+
+	FFAF45
+	FB6D48
+	D74B76
+	673F69
+
+ */
