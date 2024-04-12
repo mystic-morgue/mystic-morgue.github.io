@@ -43,9 +43,14 @@
 				<div class="collapse navbar-collapse" id="collapsibleNavId">
 					<ul class="navbar-nav me-auto mt-2 mt-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" href="#" aria-current="page"
+							<a class="nav-link active" id="tve_link" href="#" aria-current="page"
 								>The Visitor Effect
 								<span class="visually-hidden">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="indie_summit_link" href="#" aria-current="page"
+								>Indie Summit '24</a
 							>
 						</li>
 						<li class="nav-item">
@@ -81,130 +86,10 @@
 			</div>
 		</nav>
 
-		<br>
 
-		<div class="container">
-
-			<div class="row">
-				<div class="col-md-8">
-					<h1 class="title">The Visitor Effect: Not an experiment</h1>
-				</div>
-				<div class="col-md-4 text-center">	
-				<br>
-					<a
-						name=""
-						id=""
-						class="btn btn-lg btn-primary btn-wishlist"
-						href="#"
-						role="button"
-						><i class="bi bi-steam"></i> Wishlist now!</a
-					>
-				</div>
-			</div>
-			
-			
-			<hr>
-
-
-			<div class="row">
-				<div class="col-md-8">
-					<p>	Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-
-					
-					<button
-						type="button"
-						class="btn btn-primary btn-lg"
-						data-bs-toggle="modal"
-						data-bs-target="#modal-not-demo"
-					>
-						<i class="bi bi-controller"></i> Play Demo
-					</button>
-
-					<a
-						class="btn btn-primary btn-lg"
-						href="data/TVE_v0.5.3alpha.zip"
-					>
-						<i class="bi bi-controller"></i> Download TVE_v0.5.2alpha
-					</a>
-
-					<a
-						class="btn btn-primary btn-lg"
-						href="https://github.com/mystic-morgue/private-data/raw/main/TVE_build_alpha.zip"
-					>
-						<i class="bi bi-controller"></i> Download latest
-					</a>
-
-				</div>
-				<div class="col-md-4">
-
-					<img
-						src="img/img1.jpg"
-						class="img-fluid rounded-top"
-						alt=""
-					/>
-					<br><br>
-					<img
-						src="img/img2.jpg"
-						class="img-fluid rounded-top"
-						alt=""
-					/>
-				</div>
-			</div>
-		</div>
-			
+		<main id="main_content"></main>
 
 	</body>
 </html>
 
-
-<!-- Modal -->
-<div
-	class="modal fade"
-	id="modal-not-demo"
-	tabindex="-1"
-	role="dialog"
-	aria-labelledby="modalTitleId"
-	aria-hidden="true"
->
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="modalTitleId">
-					Well, about the demo...
-				</h5>
-				<!-- <button
-					type="button"
-					class="btn-close"
-					data-bs-dismiss="modal"
-					aria-label="Close"
-				></button> -->
-			</div>
-			<div class="modal-body">
-				<div class="container-fluid">We don't have it ready yet buuuut you can wishlist the game to recieve a notification when the demo comes out :)</div>
-			</div>
-			<div class="modal-footer">
-				<button
-					type="button"
-					class="btn btn-secondary"
-					data-bs-dismiss="modal"
-				>
-					Close
-				</button>
-				<button type="button" class="btn btn-primary btn-wishlist"><i class="bi bi-steam"></i> Wishlist</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script>
-	var modalId = document.getElementById('modalId');
-
-	modalId.addEventListener('show.bs.modal', function (event) {
-		  // Button that triggered the modal
-		  let button = event.relatedTarget;
-		  // Extract info from data-bs-* attributes
-		  let recipient = button.getAttribute('data-bs-whatever');
-
-		// Use above variables to manipulate the DOM
-	});
-</script>
+<script src="src/main.js"></script>
