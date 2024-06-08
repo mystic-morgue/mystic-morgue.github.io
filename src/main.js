@@ -4,7 +4,7 @@ window.onload = onWindowLoaded;
 async function onWindowLoaded()
 {
 
-	await loadHtml("pages/about.html");
+	await loadHtml("pages/tve.html");
 
 	let tve_link = document.getElementById('tve_link');
 	tve_link.onclick = () => loadHtml("pages/tve.html");
