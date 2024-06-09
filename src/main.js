@@ -15,12 +15,20 @@ async function onWindowLoaded()
 	indie_summit_link.onclick = () => loadHtml("pages/indie_summit.html");
 }
 
-
 async function loadHtml(path)
 {
 
 	let element = document.getElementById('main_content');
 	element.innerHTML = await fetchHtmlAsText(path);
+
+	try
+	{
+		twttr.widgets.load();
+	}
+	catch
+	{
+		console.log("Twitter post not reloaded.");
+	}
 }
 
 
