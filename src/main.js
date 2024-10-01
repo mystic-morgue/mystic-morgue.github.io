@@ -13,6 +13,9 @@ async function onWindowLoaded()
 
 	let indie_summit_link = document.getElementById('indie_summit_link');
 	indie_summit_link.onclick = () => loadHtml("pages/indie_summit.html");
+
+	let indie_dev_day_24 = document.getElementById('indie_dev_day_24_link');
+	indie_dev_day_24.onclick = () => loadHtml("pages/indie_dev_day_24.html");
 }
 
 async function loadHtml(path)
