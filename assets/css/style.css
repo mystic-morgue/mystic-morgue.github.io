@@ -26,8 +26,14 @@ h1, h2, h3, h4, h5, h6
 	font-family: hk-grotesk-bold;
 }
 
-.title {
-	font-size: 60pt
+.title h1
+{
+	font-size: 5em;
+}
+
+.title h1, h2, h3, h4
+{
+	display: inline-block;
 }
 
 .schoolbell {
@@ -111,4 +117,13 @@ a.btn-profile:hover {
 	D74B76
 	673F69
 
- */
+*/
+
+.banner
+{
+	height: 30vh;
+	background-image: url("../images/banner.png");
+	background-attachment: fixed;
+	background-position-x: center;
+	background-position-y: center;
+}
