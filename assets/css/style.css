@@ -101,6 +101,16 @@ a.btn-profile:hover {
 	border-color: #673F69;
 }
 
+.btn-outline-primary {
+	border-color: #c31f25;
+	color: #c31f25;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus  {
+	background-color: #673F69;
+	border-color: #673F69;
+}
+
 .btn-wishlist {
 	background-color: #2a475e;
 	border-color: #1b2838;
