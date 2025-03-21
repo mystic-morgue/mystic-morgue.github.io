@@ -13,6 +13,14 @@
 	src: url("../fonts/Schoolbell-Regular.ttf");
 }
 
+:root
+{
+	--xbox-color: #107b10;
+	--nintendo-switch-color: #e60012;
+	--steam-color: #2a475e;
+	--playstation-color: black;
+}
+
 body {
 	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
@@ -136,4 +144,49 @@ a.btn-profile:hover {
 	background-attachment: fixed;
 	background-position-x: center;
 	background-position-y: center;
+}
+
+/* .store-icon
+{
+
+} */
+
+.store-icon > a > i
+{
+	font-size: 2.4em;
+}
+
+
+.debug
+{
+	border: 2px solid black;
+}
+
+
+/* STORE COLORS */
+
+
+.bi-steam
+{
+	color: var(--steam-color);
+}
+
+.bi-nintendo-switch
+{
+	color: var(--nintendo-switch-color);
+}
+
+.bi-playstation
+{
+	color: var(--playstation-color);
+}
+
+.bi-xbox
+{
+	color: var(--xbox-color);
+}
+
+.h100
+{
+	height: 100%;
 }
