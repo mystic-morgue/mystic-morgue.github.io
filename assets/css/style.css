@@ -15,6 +15,9 @@
 
 :root
 {
+	--primary-color: #c31f25;
+
+
 	--xbox-color: #107b10;
 	--nintendo-switch-color: #e60012;
 	--steam-color: #2a475e;
@@ -119,9 +122,13 @@ a.btn-profile:hover {
 	border-color: #673F69;
 }
 
-.btn-wishlist {
+.btn-steam {
 	background-color: #2a475e;
 	border-color: #1b2838;
+}
+
+.bi-steam {
+	color: white !important;
 }
 
 .label-toe {
@@ -154,6 +161,7 @@ a.btn-profile:hover {
 .store-icon > a > i
 {
 	font-size: 2.4em;
+	margin: 0px 4px;
 }
 
 
