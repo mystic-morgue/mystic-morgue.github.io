@@ -127,8 +127,8 @@ a.btn-profile:hover {
 	border-color: #1b2838;
 }
 
-.bi-steam {
-	color: white !important;
+.btn-steam .bi-steam {
+	color: white;
 }
 
 .label-toe {
