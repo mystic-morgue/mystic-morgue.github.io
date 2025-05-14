@@ -122,6 +122,12 @@ a.btn-profile:hover {
 	border-color: #673F69;
 }
 
+.alert-danger
+{
+	background-color: #c31f24cb;
+	color: white;
+}
+
 .btn-steam {
 	background-color: #2a475e;
 	border-color: #1b2838;
