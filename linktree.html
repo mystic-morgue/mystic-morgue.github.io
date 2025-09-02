@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Elige tu plataforma favorita para jugar 'The Visitor Effect' - Disponible en Steam, PlayStation 5, Xbox y Nintendo Switch">
+	<link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="400x400">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Linktree | Mystic Morgue</title>
+	   <style>
+		   .linktree-main {
+			   min-height: 80vh;
+			   display: flex;
+			   align-items: center;
+			   justify-content: center;
+		   }
+		   .linktree-card {
+			   background: rgb(236, 236, 236); /* Menos blanco */
+			   border-radius: 24px;
+			   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+			   padding: 2.5rem 1.5rem;
+			   max-width: 420px;
+			   width: 100%;
+			   margin: 0 auto;
+		   }
+		   .linktree-title {
+			   font-family: hk-grotesk-bold;
+			   color: var(--primary-color);
+			   font-size: 2.2em;
+			   margin-bottom: 0.5em;
+			   text-align: center;
+			   text-shadow: 1px 1px 6px rgba(0,0,0,0.08);
+		   }
+		   .linktree-subtitle {
+			   color: #333;
+			   font-size: 1.1em;
+			   margin-bottom: 2em;
+			   text-align: center;
+		   }
+		   .linktree-btn {
+			   width: 100%;
+			   margin-bottom: 1.2em;
+			   padding: 1.2em 0.5em;
+			   font-size: 1.15em;
+			   font-family: hk-grotesk-bold;
+			   border-radius: 16px;
+			   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+			   transition: transform 0.2s, box-shadow 0.2s;
+			   display: flex;
+			   align-items: center;
+			   justify-content: center;
+			   gap: 0.7em;
+			   border: none;
+			   color: #fff;
+			   text-decoration: none;
+		   }
+		   .linktree-btn:hover {
+			   transform: translateY(-3px) scale(1.03);
+			   box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+			   color: #fff;
+			   text-decoration: none;
+		   }
+		   .linktree-btn.steam {
+			   background: linear-gradient(90deg, #2a475e 60%, #1b2838 100%);
+		   }
+		   .linktree-btn.steam i { color: #fff; text-shadow: 0 2px 8px #1b2838; }
+		   .linktree-btn.ps {
+			   background: linear-gradient(90deg, #003087 60%, #000 100%);
+		   }
+		   .linktree-btn.ps i { color: #fff; text-shadow: 0 2px 8px #003087; }
+		   .linktree-btn.xbox {
+			   background: linear-gradient(90deg, #107b10 60%, #0e5a0e 100%);
+		   }
+		   .linktree-btn.xbox i { color: #fff; text-shadow: 0 2px 8px #107b10; }
+		   .linktree-btn.nintendo {
+			   background: linear-gradient(90deg, #e60012 60%, #cc0010 100%);
+		   }
+		   .linktree-btn.nintendo i { color: #fff; text-shadow: 0 2px 8px #e60012; }
+		   @media (max-width: 600px) {
+			   .linktree-card { padding: 1.2rem 0.3rem; }
+			   .linktree-title { font-size: 1.3em; }
+			   .linktree-btn { font-size: 1em; padding: 1em 0.2em; }
+		   }
+	   </style>
+</head>
+<body>
+	<div class="fetch" data-href="template-parts/navbar.html"></div>
+	<div class="linktree-main">
+		<div class="linktree-card">
+			<div class="linktree-title"><u>The Visitor Effect</u></div>
+			<div class="linktree-subtitle">Elige tu plataforma favorita</div>
+			<a href="https://store.steampowered.com/app/2766330/The_Visitor_Effect_Not_an_experiment/?utm_source=mystic_morgue_qr" class="linktree-btn steam" target="_blank"><i class="bi bi-steam"></i> Steam <span style="font-size:0.85em;opacity:0.8;">PC/Mac/Linux</span></a>
+			<a href="#" class="linktree-btn ps" onclick="showComingSoon('PlayStation 5')"><i class="bi bi-playstation"></i> PlayStation 5 <span style="font-size:0.85em;opacity:0.8;">PS5</span></a>
+			<a href="#" class="linktree-btn xbox" onclick="showComingSoon('Xbox')"><i class="bi bi-xbox"></i> Xbox <span style="font-size:0.85em;opacity:0.8;">Series X|S</span></a>
+			<a href="#" class="linktree-btn nintendo" onclick="showComingSoon('Nintendo Switch')"><i class="bi bi-nintendo-switch"></i> Nintendo Switch <span style="font-size:0.85em;opacity:0.8;">Switch</span></a>
+			<div class="mt-4 text-center">
+				<a href="index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="comingSoonModalLabel">Próximamente</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center">
+					<i class="bi bi-clock-history" style="font-size: 3em; color: var(--primary-color); margin-bottom: 20px;"></i>
+					<p><strong id="platformName"></strong> estará disponible próximamente.</p>
+					<p>¡Mantente atento a nuestras redes sociales para más información!</p>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fetch" data-href="template-parts/footer.html"></div>
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function showComingSoon(platform) {
+			document.getElementById('platformName').textContent = platform;
+			var modal = new bootstrap.Modal(document.getElementById('comingSoonModal'));
+			modal.show();
+		}
+	</script>
+</body>
+</html>
